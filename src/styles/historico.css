@@ -1,0 +1,37 @@
+.history-page { padding: 58px 0 86px; }
+.history-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
+.history-heading .page-heading { margin: 14px 0 12px; }
+.history-heading .page-copy { margin: 0; }
+.history-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 32px; margin-bottom: 18px; }
+.history-stats article { padding: 19px 20px; border: 1px solid var(--line); background: #fff; border-radius: 18px 18px 18px 6px; }
+.history-stats span, .history-stats small { display: block; color: var(--ink-soft); }
+.history-stats span { font-size: .78rem; font-weight: 740; }
+.history-stats strong { display: block; margin: 4px 0 1px; font-size: 2rem; letter-spacing: -.05em; }
+.history-stats small { font-size: .74rem; }
+.history-board { padding: 22px; border-radius: 26px 26px 26px 8px; }
+.history-toolbar { display: grid; grid-template-columns: 1fr 220px; gap: 14px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.history-list { display: grid; }
+.history-item { display: grid; grid-template-columns: 62px 1fr; gap: 16px; padding: 22px 4px; border-bottom: 1px solid var(--line); }
+.history-item__number { color: #AFC1D9; font-size: 2rem; line-height: 1; font-weight: 900; letter-spacing: -.06em; }
+.history-item__content { display: flex; justify-content: space-between; gap: 28px; align-items: center; }
+.history-item h2 { margin: 9px 0 5px; font-size: 1.22rem; letter-spacing: -.03em; }
+.history-item p { margin: 0; color: var(--ink-soft); line-height: 1.45; }
+.history-item__meta { display: flex; align-items: center; gap: 15px; flex-shrink: 0; }
+.history-item__meta > span:first-child { color: var(--ink-soft); font-size: .82rem; }
+.history-item__meta a { color: var(--blue); font-size: .85rem; font-weight: 780; text-decoration: none; }
+.history-empty { margin: 0; padding: 42px 0; color: var(--ink-soft); text-align: center; }
+
+@media (max-width: 820px) {
+  .history-heading, .history-item__content { align-items: stretch; flex-direction: column; }
+  .history-heading { display: flex; }
+  .history-item__meta { justify-content: space-between; flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  .history-page { padding-top: 38px; }
+  .history-stats { grid-template-columns: 1fr; }
+  .history-toolbar { grid-template-columns: 1fr; }
+  .history-board { padding: 15px; }
+  .history-item { grid-template-columns: 42px 1fr; }
+  .history-item__number { font-size: 1.5rem; }
+  .history-item__meta { align-items: flex-start; flex-direction: column; gap: 9px; }
+}
