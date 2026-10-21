@@ -1,0 +1,145 @@
+export const themes = [
+  {
+    id: 'ia-educacao',
+    category: 'Tecnologia',
+    level: 'Intermediario',
+    title: 'Os impactos da inteligencia artificial na educacao brasileira',
+    summary: 'Discuta oportunidades, desigualdades de acesso, autoria, pensamento critico e o papel de professores e estudantes.',
+    tags: ['educacao', 'IA', 'sociedade'],
+    axes: ['democratizacao do acesso', 'formacao docente', 'etica e autoria', 'desigualdade digital'],
+  },
+  {
+    id: 'desinformacao-jovens',
+    category: 'Sociedade',
+    level: 'Intermediario',
+    title: 'Desafios para combater a desinformacao entre jovens no Brasil',
+    summary: 'Reflita sobre educacao midiatica, responsabilidade das plataformas e participacao social.',
+    tags: ['midia', 'juventude', 'cidadania'],
+    axes: ['educacao midiatica', 'algoritmos', 'responsabilidade das plataformas', 'politicas publicas'],
+  },
+  {
+    id: 'saude-mental-escola',
+    category: 'Saude',
+    level: 'Intermediario',
+    title: 'A importancia da saude mental no ambiente escolar',
+    summary: 'Aborde acolhimento, prevencao, informacao e redes de apoio para estudantes.',
+    tags: ['escola', 'bem-estar', 'prevencao'],
+    axes: ['acolhimento', 'formacao de profissionais', 'prevencao', 'rede de cuidado'],
+  },
+  {
+    id: 'inclusao-pcd',
+    category: 'Direitos humanos',
+    level: 'Intermediario',
+    title: 'Caminhos para ampliar a inclusao de pessoas com deficiencia no Brasil',
+    summary: 'Analise acessibilidade, capacitismo, educacao, trabalho e participacao social.',
+    tags: ['inclusao', 'acessibilidade', 'cidadania'],
+    axes: ['acessibilidade', 'capacitismo', 'educacao inclusiva', 'mercado de trabalho'],
+  },
+  {
+    id: 'evasao-escolar',
+    category: 'Educacao',
+    level: 'Avancado',
+    title: 'Desafios para reduzir a evasao escolar entre jovens brasileiros',
+    summary: 'Relacione desigualdade, trabalho precoce, pertencimento, infraestrutura e politicas de permanencia.',
+    tags: ['educacao', 'juventude', 'desigualdade'],
+    axes: ['renda', 'trabalho precoce', 'permanencia', 'politicas publicas'],
+  },
+  {
+    id: 'saneamento',
+    category: 'Sociedade',
+    level: 'Avancado',
+    title: 'A universalizacao do saneamento basico como desafio de cidadania',
+    summary: 'Discuta saude publica, desigualdade territorial, investimentos e responsabilidade estatal.',
+    tags: ['saneamento', 'saude', 'cidadania'],
+    axes: ['saude publica', 'desigualdade urbana', 'investimento', 'gestao publica'],
+  },
+  {
+    id: 'cultura-leitura',
+    category: 'Cultura',
+    level: 'Inicial',
+    title: 'O papel da leitura na formacao critica dos jovens',
+    summary: 'Discuta acesso a livros, formacao de leitores e autonomia intelectual.',
+    tags: ['leitura', 'educacao', 'cultura'],
+    axes: ['acesso', 'escola', 'bibliotecas', 'formacao critica'],
+  },
+  {
+    id: 'trabalho-futuro',
+    category: 'Trabalho',
+    level: 'Avancado',
+    title: 'Preparacao dos jovens para as transformacoes do mundo do trabalho',
+    summary: 'Relacione qualificacao, tecnologia, desigualdade de acesso e aprendizagem continua.',
+    tags: ['carreira', 'tecnologia', 'qualificacao'],
+    axes: ['formacao tecnica', 'aprendizagem continua', 'automacao', 'desigualdade digital'],
+  },
+];
+
+export const essayModels = [
+  {
+    id: 'estrutura-coringa',
+    title: 'Esqueleto coringa de quatro paragrafos',
+    warning: 'Use como estrutura de planejamento. Nao memorize um texto inteiro para encaixar em qualquer tema.',
+    sections: [
+      {
+        name: 'Introducao',
+        objective: 'Contextualizar, delimitar o problema e apresentar uma tese com dois eixos argumentativos.',
+        template: '[Contextualizacao pertinente]. Nesse contexto, [problema do tema] permanece relevante no Brasil, sobretudo em razao de [argumento 1] e [argumento 2].',
+      },
+      {
+        name: 'Desenvolvimento 1',
+        objective: 'Defender o primeiro eixo com explicacao, repertorio pertinente e relacao causal.',
+        template: 'Em primeiro plano, [topico frasal]. [Repertorio pertinente]. Isso evidencia que [explicacao ligada ao tema], pois [causa/consequencia].',
+      },
+      {
+        name: 'Desenvolvimento 2',
+        objective: 'Apresentar um segundo argumento diferente e aprofundar a analise.',
+        template: 'Ademais, [segundo argumento]. Sob essa perspectiva, [exemplo/repertorio] demonstra que [analise]. Logo, [consequencia ligada a tese].',
+      },
+      {
+        name: 'Conclusao',
+        objective: 'Apresentar proposta de intervencao vinculada aos problemas discutidos.',
+        template: 'Portanto, cabe a [agente] promover [acao], por meio de [meio/modo], a fim de [finalidade]. A medida deve [detalhamento], contribuindo para [efeito esperado].',
+      },
+    ],
+  },
+  {
+    id: 'mapa-de-tese',
+    title: 'Modelo para construir tese sem frase decorada',
+    warning: 'A tese precisa responder ao tema especifico, nao apenas repetir palavras da proposta.',
+    sections: [
+      { name: 'Pergunta 1', objective: 'Qual problema concreto existe?', template: 'Problema central: [...]' },
+      { name: 'Pergunta 2', objective: 'Quais duas causas ou dimensoes ajudam a explicar o problema?', template: 'Eixo 1: [...] | Eixo 2: [...]' },
+      { name: 'Pergunta 3', objective: 'Qual posicao o texto defendera?', template: 'Tese: [...]' },
+    ],
+  },
+  {
+    id: 'intervencao-enem',
+    title: 'Checklist de proposta de intervencao',
+    warning: 'A intervencao deve respeitar os direitos humanos e responder ao problema argumentado.',
+    sections: [
+      { name: 'Agente', objective: 'Quem executa?', template: 'Ministerio, escola, prefeitura, plataforma, sociedade civil...' },
+      { name: 'Acao', objective: 'O que sera feito?', template: 'Criar, ampliar, fiscalizar, capacitar, financiar...' },
+      { name: 'Meio', objective: 'Como sera executado?', template: 'Campanhas, programas, parcerias, regulamentacao, investimento...' },
+      { name: 'Finalidade', objective: 'Para que?', template: 'Reduzir, ampliar, prevenir, garantir...' },
+      { name: 'Detalhamento', objective: 'Qual elemento torna a proposta concreta?', template: 'Publico-alvo, frequencia, criterio, responsavel, mecanismo de acompanhamento...' },
+    ],
+  },
+];
+
+export const learningGuide = {
+  title: 'Como construir uma redacao dissertativo-argumentativa estilo ENEM',
+  principles: [
+    'Leia o recorte do tema e transforme-o em uma pergunta-problema.',
+    'Defina uma tese que responda a pergunta e escolha dois eixos argumentativos.',
+    'Use repertorio apenas quando ele ajudar a explicar ou provar o argumento.',
+    'Garanta progressao entre introducao, desenvolvimentos e conclusao.',
+    'Na proposta de intervencao, conecte a solucao aos problemas efetivamente discutidos.',
+  ],
+  checklist: [
+    'Meu texto atende exatamente ao tema?',
+    'Minha tese esta clara?',
+    'Cada paragrafo de desenvolvimento possui uma ideia central?',
+    'Meus repertorios foram explicados e conectados ao argumento?',
+    'Usei conectivos sem repeticao mecanica?',
+    'Minha intervencao possui agente, acao, meio, finalidade e detalhamento?',
+  ],
+};

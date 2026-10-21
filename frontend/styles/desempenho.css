@@ -1,0 +1,42 @@
+.performance-page { padding: 58px 0 86px; }
+.performance-heading { max-width: 900px; }
+.performance-heading .page-heading { margin: 14px 0 12px; }
+.performance-heading .page-copy { margin: 0; max-width: 720px; }
+.performance-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 34px; margin-bottom: 18px; }
+.performance-kpis article { min-height: 135px; padding: 20px; border: 1px solid var(--line); border-radius: 20px 20px 20px 6px; background: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+.performance-kpis article:first-child { background: var(--blue); color: #fff; border-color: var(--blue); }
+.performance-kpis span, .performance-kpis small { font-size: .78rem; color: var(--ink-soft); }
+.performance-kpis article:first-child span, .performance-kpis article:first-child small { color: rgba(255,255,255,.75); }
+.performance-kpis strong { font-size: 2.25rem; letter-spacing: -.06em; line-height: 1; }
+.performance-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 18px; }
+.performance-chart, .competency-average { padding: 24px; border-radius: 26px 26px 26px 8px; }
+.performance-section-title { display: flex; align-items: start; justify-content: space-between; gap: 18px; }
+.performance-section-title h2 { margin: 10px 0 0; font-size: 1.45rem; letter-spacing: -.035em; }
+.performance-trend { color: var(--success); background: #ECFFF7; border-radius: 999px; padding: 8px 10px; font-size: .76rem; font-weight: 760; }
+.score-chart { position: relative; margin-top: 34px; padding-left: 44px; }
+.score-chart svg { width: 100%; height: 270px; color: var(--blue); overflow: visible; }
+.score-chart line { stroke: #DFE8F3; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.score-chart polyline { vector-effect: non-scaling-stroke; }
+.score-chart__labels { position: absolute; left: 0; top: 0; height: 220px; display: flex; flex-direction: column; justify-content: space-between; color: var(--ink-soft); font-size: .72rem; }
+.score-chart__footer { display: flex; justify-content: space-between; color: var(--ink-soft); font-size: .72rem; padding-top: 6px; }
+.competency-average__list { display: grid; gap: 18px; margin-top: 30px; }
+.competency-average__item > div:first-child { display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px; }
+.competency-average__item > div:first-child span { color: var(--ink-soft); font-size: .8rem; font-weight: 700; }
+.competency-average__track { height: 9px; background: #E8EFF8; border-radius: 99px; overflow: hidden; }
+.competency-average__track i { display: block; height: 100%; background: linear-gradient(90deg, var(--blue), var(--blue-light)); border-radius: 99px; }
+.performance-tip { margin-top: 28px; padding: 18px; background: #EAF4FF; border-radius: 18px 18px 18px 6px; }
+.performance-tip span { display: block; color: var(--blue); text-transform: uppercase; font-size: .69rem; letter-spacing: .08em; font-weight: 820; }
+.performance-tip strong { display: block; margin-top: 5px; }
+.performance-tip p { margin: 8px 0 0; color: var(--ink-soft); font-size: .86rem; line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .performance-kpis { grid-template-columns: repeat(2, 1fr); }
+  .performance-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .performance-page { padding-top: 38px; }
+  .performance-kpis { grid-template-columns: 1fr; }
+  .performance-section-title { align-items: flex-start; flex-direction: column; }
+  .performance-chart, .competency-average { padding: 17px; }
+  .score-chart svg { height: 220px; }
+}
